@@ -1,6 +1,6 @@
 import type { NextConfig } from 'next';
 
-const backendUrl = (process.env.BACKEND_URL || 'http://localhost:4000').replace(/\/$/, '');
+const backendUrl = ('https://memed-payout-tracker.onrender.com').replace(/\/$/, '');
 const config: NextConfig = {
   async rewrites() {
     return [{ source: '/api/:path*', destination: `${backendUrl}/api/:path*` }];
