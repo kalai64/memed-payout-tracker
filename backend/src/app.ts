@@ -35,6 +35,9 @@ const authLimiter = rateLimit({
 });
 app.use('/api/auth/login', authLimiter);
 app.use('/api/auth/signup', authLimiter);
+app.get('/', (_req, res) => {
+  res.status(200).send('Server is live');
+});
 app.get('/api/health', (_req, res) => res.json({ status: 'ok' }));
 app.use('/api/auth', authRouter);
 app.use('/api/campaigns', campaignRouter);
