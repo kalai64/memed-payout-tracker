@@ -35,7 +35,7 @@ Open http://localhost:3000 in your browser. The backend runs on http://localhost
 Add these values to `backend/.env`:
 
 ```env
-PORT=4000
+PORT=8000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_random_secret_at_least_32_characters_long
 FRONTEND_URL=http://localhost:3000
