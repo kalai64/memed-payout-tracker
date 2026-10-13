@@ -51,7 +51,7 @@ NODE_ENV=development
 Add this value to `frontend/.env.local`:
 
 ```env
-BACKEND_URL=http://localhost:4000
+BACKEND_URL=http://localhost:8000
 ```
 
 `BACKEND_URL` tells Next.js where the backend runs. Restart the frontend after changing it locally, or rebuild it for production. Keep your actual `.env` files out of Git.
