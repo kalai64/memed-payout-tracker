@@ -35,7 +35,7 @@ Open http://localhost:3000 in your browser. The backend runs on http://localhost
 Add these values to `backend/.env`:
 
 ```env
-PORT=4000
+PORT=8000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_random_secret_at_least_32_characters_long
 FRONTEND_URL=http://localhost:3000
@@ -51,7 +51,7 @@ NODE_ENV=development
 Add this value to `frontend/.env.local`:
 
 ```env
-BACKEND_URL=http://localhost:4000
+BACKEND_URL=http://localhost:8000
 ```
 
 `BACKEND_URL` tells Next.js where the backend runs. Restart the frontend after changing it locally, or rebuild it for production. Keep your actual `.env` files out of Git.
